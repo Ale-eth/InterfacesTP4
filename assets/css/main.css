@@ -1,4 +1,12 @@
+body{
+    padding: 0;
+    margin: 0;
+}
 
 #container-main{
     width: 1080px;
+
+    /* BORDE DELIMITADOR TEMPORAL, para poder verlo*/
+    border-style: solid;
+    border-color: red;
 }

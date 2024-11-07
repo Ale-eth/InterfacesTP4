@@ -1,0 +1,170 @@
+#hero {
+    background-image: url('/assets/images/Section HERO/bg1.png');
+    height: 959px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+}
+
+/*   --------------------------------------------------------------------------------------   */
+/* -MENU HAMBURGUESA- */
+#menu-toggle {
+    position: absolute;
+    top: 20px;
+    left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 34px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.bar {
+    background-color: #F39E46;
+    height: 4px;
+    width: 100%;
+    transition: all 0.3s ease;
+    border-radius: 111px;
+    outline: 4px solid white;
+    box-shadow: 5px 4px 0px 3px #02187E;
+    
+}
+
+/* Cuando el menú hamburguesa se convierte en cruz */
+#menu-toggle.active #bar1 {
+    position: absolute;
+    transform: rotate(45deg); /* Primera barra en ángulo */
+    top: 0px; /* Alinea la barra con la parte superior */
+}
+
+#menu-toggle.active #bar2 {
+    opacity: 0; /* Segunda barra desaparece */
+}
+
+#menu-toggle.active #bar3 {
+    transform: rotate(-45deg); /* Tercera barra en ángulo */
+    bottom: 0px; /* Alinea la barra con la parte inferior */
+}
+
+/*   --------------------------------------------------------------------------------------   */
+
+/*   --------------------------------------------------------------------------------------   */
+/*   -LOGO-   */
+#logo-hero {
+    height: 320px;
+    width: 473px; 
+    margin-top: 55px;
+}
+/*   --------------------------------------------------------------------------------------   */
+
+/*   --------------------------------------------------------------------------------------   */
+/*   -ARBOLES-   */
+#img-arbol1 {
+    position: absolute;
+    top: 0px;
+    left: -135px; 
+    z-index: 2;
+}
+
+#img-arbol2 {
+    position: absolute;
+    top: 107px;
+    right: -31px; 
+    z-index: 3;
+}
+
+#img-arbol3 {
+    position: absolute;
+    top: 278.5px;
+    right: -67px; 
+    z-index: 1;
+}
+/*   --------------------------------------------------------------------------------------   */
+
+/*   --------------------------------------------------------------------------------------   */
+/*   -NUBES-   */
+#img-nube1 {
+    position: absolute;
+    opacity: 50%;
+    left: 136px; 
+    top: 718.3px;
+    z-index: 0;
+}
+
+#img-nubegris2 {
+    position: absolute;
+    left: 109px; 
+    top: 793.7px;
+    z-index: 3;
+}
+
+#img-nube2 {
+    position: absolute;
+    left: 167px; 
+    top: 822px;
+    z-index: 4;
+}
+
+#img-nube4 {
+    position: absolute;
+    right: 50px; 
+    top: 630.79px;
+    z-index: 0;
+}
+
+#img-nube3 {
+    position: absolute;
+    right: -39px; 
+    top: 662.43px;
+    z-index: 2;
+}
+
+#img-nubegris3 {
+    position: absolute;
+    right: 78px;
+    top: 737.82px;
+    z-index: 4;
+}
+
+#img-nubegris4 {
+    position: absolute;
+    right: 146px; 
+    top: 737.82px;
+    z-index: 3;
+}
+
+#img-nubegris5 {
+    position: absolute;
+    right: 149px; 
+    top: 787px;
+    z-index: 5;
+}
+/*   --------------------------------------------------------------------------------------   */
+
+/*   --------------------------------------------------------------------------------------   */
+/*   -PERSONAJES-   */
+#img-personajerojo {
+    position: absolute;
+    left: 347px; 
+    top: 500px;
+    z-index: 2;
+}
+
+#img-personajeanaranja {
+    position: absolute;
+    left: 452px; 
+    top: 403px;
+    z-index: 1;
+}
+
+#img-personajeamarillo {
+    position: absolute;
+    left: 586px;
+    top: 338px;
+    z-index: 0;
+}
+/*   --------------------------------------------------------------------------------------   */
