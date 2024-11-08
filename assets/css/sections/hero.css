@@ -1,15 +1,25 @@
 #hero {
-    background-image: url('InterfacesTP4/assets/images/Section HERO/bg1.png');
+    background-image: url("../../images/Section HERO/bg1.png");
     height: 959px;
     position: relative;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
     background-size: cover;
 }
 
+
 /*   --------------------------------------------------------------------------------------   */
-/* -MENU HAMBURGUESA- */
+/*   -HEADER-   */
+#header {
+    background-image: url("../../images/Section HERO/nav.png");
+    background-size: cover;
+    position: sticky;
+    height: 100px;
+    width: 1080px; 
+}
+/*   --------------------------------------------------------------------------------------   */
+
+/*   --------------------------------------------------------------------------------------   */
+/* -HEADER / MENU HAMBURGUESA- */
 #menu-toggle {
     position: absolute;
     top: 20px;
@@ -53,11 +63,46 @@
 /*   --------------------------------------------------------------------------------------   */
 
 /*   --------------------------------------------------------------------------------------   */
-/*   -LOGO-   */
+/*   -HEADER / LOGO-   */
 #logo-hero {
+
+}
+
+.logo-hero1 {
+    position: sticky;
     height: 320px;
     width: 473px; 
-    margin-top: 55px;
+    left: 300px;
+}
+
+.logo-hero2 {
+    position: absolute;
+    top: 6px;
+    height: 86px;
+    width: 150px; 
+    left: 425px;
+}
+/*   --------------------------------------------------------------------------------------   */
+
+/*   --------------------------------------------------------------------------------------   */
+/*   -HEADER / BOTON COMPRAR-   */
+#boton-comprar {
+    position: absolute;
+    height: 50px;
+    width: 200px; 
+    top: 20px;
+    right: 100px;
+    background-color: #83C252;
+    display: flex;
+    justify-content: center;
+    outline: 8px solid white;
+    border-radius: 111px;
+    box-shadow: 8px 8px 0px 3px #02187E;
+}
+
+#boton-comprar p{
+    font-size: 20px;
+    color: white;
 }
 /*   --------------------------------------------------------------------------------------   */
 
