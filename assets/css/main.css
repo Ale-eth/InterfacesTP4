@@ -5,6 +5,7 @@ body{
 
 #container-main{
     width: 1080px;
+    height: 5000px;
 
     /* BORDE DELIMITADOR TEMPORAL, para poder verlo*/
     border-style: solid;
