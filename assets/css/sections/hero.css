@@ -17,15 +17,16 @@
     background-size: cover;
     position: sticky;
     height: 100px;
-    width: 1080px; 
-    z-index:3 ;
+    width: 100%; 
+    z-index:1000 ;
     transition: all 0.3s ease;  /* Transición suave para cambios de estilo */
+    top: 0;
 }
 /*   --------------------------------------------------------------------------------------   */
 
 /*   --------------------------------------------------------------------------------------   */
 /* -HEADER / MENU HAMBURGUESA- */
-#menu-toggle {
+#menu-cerrado {
     position: absolute;
     top: 20px;
     left: 100px;
@@ -50,19 +51,32 @@
 }
 
 /* Cuando el menú hamburguesa se convierte en cruz */
-#menu-toggle.active #bar1 {
+#menu-cerrado.active #bar1 {
     position: absolute;
     transform: rotate(45deg); /* Primera barra en ángulo */
     top: 0px; /* Alinea la barra con la parte superior */
 }
 
-#menu-toggle.active #bar2 {
+#menu-cerrado.active #bar2 {
     opacity: 0; /* Segunda barra desaparece */
 }
 
-#menu-toggle.active #bar3 {
+#menu-cerrado.active #bar3 {
     transform: rotate(-45deg); /* Tercera barra en ángulo */
     bottom: 0px; /* Alinea la barra con la parte inferior */
+}
+
+
+#menu-abierto{
+    position: absolute;
+    width: 300px;
+    height: 350px;
+    background-color:bisque;
+    display: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*   --------------------------------------------------------------------------------------   */

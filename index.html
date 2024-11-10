@@ -5,19 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets\css\main.css">
     <link rel="stylesheet" href="assets\css\sections\hero.css">
+    <link rel="stylesheet" href="assets\css\sections\loader.css">
+
+
     <title>Interfaces TP4</title>
 </head>
 <body>
-    
+
+
     <section id="container-main">
+
+        <div id="loader">
+            <div id="spinner"></div>
+        </div>
 
         <section id="hero">
 
             <div id="header">
-                <div id="menu-toggle">
+                <div id="menu-cerrado">
                     <div class="bar" id="bar1"></div>
                     <div class="bar" id="bar2"></div>
                     <div class="bar" id="bar3"></div>
+                </div>
+
+                <div id="menu-abierto">
+                    <p>Opcion 1</p>
+                    <p>Opcion 2</p>
+                    <p>Opcion 3</p>
                 </div>
     
                 <img id="logo-hero" class="logo-hero-big" src="assets\images\Section HERO\logo.png" alt="">
@@ -52,8 +66,10 @@
         </section>
 
     </section>
-    
+    <script src="assets/js/menuHamburguesa.js"></script>
+
 <script src="assets/js/main.js"></script>
+<script src="assets/js/loader.js"></script>
 <script src="assets/js/stickyHeader.js"></script>
 </body>
 </html>
