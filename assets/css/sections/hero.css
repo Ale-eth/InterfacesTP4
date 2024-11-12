@@ -83,13 +83,20 @@
 
 /*   --------------------------------------------------------------------------------------   */
 /*   -HEADER / LOGO-   */
-/*#logo-hero {} */
+#logo-hero {
+    position: sticky;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%); /* Centra horizontalmente */
+    transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+}
 
 .logo-hero-big {
     position: absolute;
     height: 320px;
     width: 473px; 
-    left: 300px;
+    left: 304px;
+    transform: translate(-50%, 0);
 }
 
 .logo-hero-small {
@@ -97,7 +104,8 @@
     top: 6px;
     height: 86px;
     width: 150px; 
-    left: 425px;
+    left: 497px;
+    transform: translate(-50%, 0);
 }
 /*   --------------------------------------------------------------------------------------   */
 
@@ -221,7 +229,7 @@
     z-index: 2;
 }
 
-#img-personajeanaranja {
+#img-personajenaranja {
     position: absolute;
     left: 452px; 
     top: 403px;
