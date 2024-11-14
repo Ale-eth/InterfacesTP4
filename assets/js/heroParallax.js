@@ -24,6 +24,7 @@ const personajeamarillo = document.getElementById('img-personajeamarillo');
 window.addEventListener('scroll', () => {
     if (window.scrollY > 0) {
         const scrollPosition = window.scrollY;
+        
 
         // Elementos que desaparecen hacia la izquierda
         arbol1.style.transform = `translateX(${-scrollPosition /4}px)`;

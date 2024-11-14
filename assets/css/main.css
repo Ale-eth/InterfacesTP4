@@ -6,6 +6,8 @@ body{
 #container-main{
     width: 1080px;
     height: 5000px;
+    background-color: #FFFFFF;
+    overflow: hidden;
 
     /* BORDE DELIMITADOR TEMPORAL, para poder verlo*/
     border-style: solid;
