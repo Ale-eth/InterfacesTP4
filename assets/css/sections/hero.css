@@ -47,37 +47,32 @@
     border-radius: 111px;
     outline: 4px solid white;
     box-shadow: 5px 4px 0px 3px #02187E;
-    
 }
 
 /* Cuando el menú hamburguesa se convierte en cruz */
-#menu-cerrado.active #bar1 {
-    position: absolute;
-    transform: rotate(45deg); /* Primera barra en ángulo */
-    top: 0px; /* Alinea la barra con la parte superior */
+#menu-cerrado.active .bar:nth-child(1) {
+    transform: rotate(45deg) translate(7px, 7px); /* Ajusta los valores para centrar mejor */
 }
 
-#menu-cerrado.active #bar2 {
+#menu-cerrado.active .bar:nth-child(2) {
     opacity: 0; /* Segunda barra desaparece */
 }
 
-#menu-cerrado.active #bar3 {
-    transform: rotate(-45deg); /* Tercera barra en ángulo */
-    bottom: 0px; /* Alinea la barra con la parte inferior */
+#menu-cerrado.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px); /* Ajusta los valores para centrar mejor */
 }
 
-
-#menu-abierto{
+/* Estilo para el menú abierto */
+#menu-abierto {
     position: absolute;
     width: 300px;
     height: 350px;
-    background-color:bisque;
+    background-color: bisque;
     display: none;
-
-    display: flex;
     justify-content: center;
     align-items: center;
 }
+
 
 /*   --------------------------------------------------------------------------------------   */
 
