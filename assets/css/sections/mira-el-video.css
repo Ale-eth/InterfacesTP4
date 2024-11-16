@@ -1,0 +1,118 @@
+#mira-el-video {
+    height: 1000px;
+    position: relative;
+    z-index: 0;
+    background-color: #EFB71E;
+    overflow: hidden;
+}
+
+/* Onda superior */
+#mira-el-video::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px; /* Ajusta la altura de la onda superior */
+    background-color: #EFB71E;
+    clip-path: path('M0 0 C 15 50, 35 50, 50% 0 C 65 50, 85 50, 100% 0'); /* Onda superior */
+    transform: translateY(-100%);
+}
+
+/* Onda inferior */
+#mira-el-video::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px; /* Ajusta la altura de la onda inferior */
+    background-color: #EFB71E;
+    clip-path: path('M0 100% C 15 50, 35 50, 50% 100% C 65 50, 85 50, 100% 100%'); /* Onda inferior */
+    transform: translateY(100%);
+}
+
+#titulo-video {
+    width: 802px;
+    height: 171px;
+    left: 100px;
+    gap: 0px;
+    opacity: 0px;
+    padding-bottom: 100px;
+}
+
+#titulo-video h1 {
+    font-family: Lato;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 56.7px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: white;
+}
+
+#container {
+    display: flex; /* Activamos flexbox en el contenedor */
+    flex-direction: row; /* Las columnas estarán en fila (horizontal) */
+    position: relative;
+    justify-content: space-between; /* Añadimos espacio entre las columnas */
+}
+
+.imagen-con-play {
+    position: relative; /* Necesario para posicionar el ícono sobre la imagen */
+    width: 60%; /* Ocupa el 60% del contenedor, haciendo que la imagen sea más grande */
+    height: 100%; /* Mantiene la altura del contenedor */
+    left: 100px;
+    gap: 0px;
+    opacity: 1; /* Hace la imagen visible */
+}
+
+.imagen-con-play img {
+    width: 100%; /* Ajustamos el ancho de la imagen */
+    height: auto;
+    object-fit: cover; /* Asegura que la imagen cubra todo el contenedor sin distorsionarse */
+}
+
+.enlace-youtube {
+    position: absolute; /* El enlace está sobre la imagen */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center; /* Centra el ícono horizontalmente */
+    align-items: center; /* Centra el ícono verticalmente */
+    text-decoration: none; /* Quita el subrayado */
+}
+
+.play-icon {
+    font-size: 50px; /* Tamaño del ícono de Play */
+    color: white; /* Color blanco */
+    padding: 15px;
+    border-radius: 50%; /* Hace el ícono circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; /* Cambia el cursor cuando pasa sobre el ícono */
+}
+
+.play-icon:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Cambia el fondo al pasar el ratón */
+}
+
+#img-tres {
+    flex: 1; /* Ocupa el 50% del contenedor */
+    position: relative; /* Para que se pueda posicionar la imagen sobre el video */
+    top: -50px; /* Ajuste negativo para mover la imagen hacia arriba, sobresaliendo sobre el video */
+    opacity: 1; /* Hace la imagen visible */
+    z-index: 1; /* Asegura que la imagen tres esté encima del video */
+}
+
+#img-tres img {
+    width: 100%; /* Ocupa el 100% del contenedor */
+    height: auto;
+    object-fit: cover; /* Asegura que la imagen cubra todo el contenedor */
+}
+
+

@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+#descubre-el-juego-mas-divertido{
+
+    padding-top: 70px;
+    height: 990px;
+    position: relative;
+    background-color: #5829BF;
+    border-style: solid;
+    border-color: green;
+
+}
+#text-container3{
+   
+   width: 950px;
+   height: 153px;
+   left: 165px;
+    
+}
+#text-container3 p{
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+    font-style: SemiBold;
+    font-family: Lato;
+    font-size: 61.14px;
+    font-weight: 600;
+    line-height: 67.25px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;    
+}
+
+#seis-numeros img{
+    width: 1100px;
+    height: 831px;
+    left: -41px;
+    gap: 0px;
+    opacity: 0px;
+    object-fit: cover; /* Ajusta la imagen para cubrir todo el div */
+    z-index: -1; /* Envía la imagen al fondo */
+ 
+}
+#seis-numeros .btn {
+    position: absolute; /* Posiciona el botón dentro del contenedor */
+    top: 30%; /* Lleva el botón al centro verticalmente */
+    left: 50%; /* Lleva el botón al centro horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta para centrar perfectamente */
+    padding: 15px 30px;
+    background-color: #83C252;
+    border: 8px solid white; /* Bordes blancos */
+    border-radius: 50px; /* Márgenes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    color: white;
+    cursor: pointer;
+    font-size: 30px;
+  }

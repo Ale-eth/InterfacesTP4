@@ -1,0 +1,35 @@
+#mas-amigos-mas-diversion{
+    height: 5000px;
+    position: relative;
+    z-index: 0;
+    border-style: solid;
+    border-color: white;
+}
+#contenedor {
+    display: flex; /* Activamos flexbox en el contenedor */
+    flex-direction: row; /* Las columnas estarán en fila (horizontal) */
+    height: 450px;
+}
+
+#imagen-izq {
+    flex: 1; /* Ocupa el 50% del contenedor */
+    background-color: white;
+    padding: 20px; /* Espaciado dentro de la columna */
+    height: 300px;
+}
+#imagen-izq img {
+    height: 300px;
+}
+
+#texto-derecha {
+    flex: 1; /* Ocupa el 50% del contenedor */
+    background-color: white; 
+    padding: 20px; /* Espaciado dentro de la columna */
+    align-items: center;
+    justify-content: center;
+}
+#texto-derecha h2, p {
+    align-items: center;
+    justify-content: center;
+}
+

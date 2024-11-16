@@ -1,0 +1,74 @@
+
+#experimenta-efectos-3D {
+    height: 1200px;
+    position: relative;
+    z-index: 0;
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; /* Apilar los elementos */
+}
+
+#conteneir-3d {
+    display: flex;
+    flex-direction: row; /* Alinear los elementos en fila (horizontal) */
+    height: 450px;
+    justify-content: space-between; /* Añadir espacio entre los elementos */
+    position: relative;
+}
+
+#texto-3d {
+    
+    position: relative; /* Necesario para controlar la posición de la imagen sobre el texto */
+    z-index: 1; /* Asegura que el texto esté por encima de la imagen */
+}
+#texto-3d h1 {
+    flex: 0 0 70%; /* El título ocupa el 70% */
+    font-family: Lato;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 56.7px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+    color: #9D2121; /* Color del texto */
+    margin-bottom: 20px; /* Espacio entre el título y el párrafo */
+}
+
+#texto-3d p {
+    flex: 0 0 50%; /* El título ocupa el 70% */
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 18.9px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    
+}
+#img-3d {
+    flex: 0 0 30%; /* La imagen ocupa el 30% */
+    position: relative; /* Para controlar la superposición */
+    left: -100px; /* Mueve la imagen ligeramente hacia la izquierda para superponerse con el texto */
+    z-index: 0; /* La imagen debe estar detrás del texto */
+    height: 100%; /* Hace que el contenedor ocupe toda la altura disponible */
+}
+
+#img-3d img {
+    width: 120%; /* Aumenta el tamaño de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin deformarse */
+    opacity: 1; /* Asegura que la imagen sea visible */
+}
+#numeros3D {
+    width: 100%; /* Hace que el div ocupe todo el ancho disponible */
+    height: 450px;
+    padding-top: 100px;
+    position: relative;
+}
+
+#numeros3D img {
+    width: 100%; /* La imagen se ajusta al 100% del ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
