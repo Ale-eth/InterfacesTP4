@@ -56,3 +56,12 @@
     cursor: pointer;
     font-size: 30px;
   }
+ 
+#seis-numeros {
+    position: relative;
+
+}
+
+#seis-numeros img {
+    transition: transform 0.5s ease-out; /* Movimiento suave */
+}

@@ -1,35 +1,64 @@
-#mas-amigos-mas-diversion{
-    height: 5000px;
+/* Estilos generales del contenedor */
+#mas-amigos-mas-diversion {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     position: relative;
-    z-index: 0;
-    border-style: solid;
-    border-color: white;
-}
-#contenedor {
-    display: flex; /* Activamos flexbox en el contenedor */
-    flex-direction: row; /* Las columnas estarán en fila (horizontal) */
-    height: 450px;
+    height: 100vh; /* Esto es importante para que ocupe toda la pantalla */
+    overflow: hidden; /* Ocultar cualquier contenido fuera de la pantalla */
 }
 
-#imagen-izq {
-    flex: 1; /* Ocupa el 50% del contenedor */
-    background-color: white;
-    padding: 20px; /* Espaciado dentro de la columna */
-    height: 300px;
+/* Contenedor principal que tiene todas las secciones */
+.carousel-container {
+    display: flex;
+    flex-direction: column; /* Las secciones se alinean verticalmente */
 }
+
+/* Cada sección individual */
+.contenedor {
+    min-height: 100vh; /* Cada contenedor ocupa la pantalla completa */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Empieza invisible */
+    transition: opacity 5s ease-out; /* Transición suave para la visibilidad */
+    position: absolute; /* Para que todos los contenedores se apilen */
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+/* Mostrar un contenedor a la vez */
+.contenedor.show {
+    opacity: 1;
+    position: relative; /* Lo hace visible */
+}
+
+
+/* Estilo de la imagen */
 #imagen-izq img {
-    height: 300px;
+    width: 150px;
+    height: auto;
+    object-fit: cover;
 }
 
+/* Estilo del texto */
 #texto-derecha {
-    flex: 1; /* Ocupa el 50% del contenedor */
-    background-color: white; 
-    padding: 20px; /* Espaciado dentro de la columna */
-    align-items: center;
-    justify-content: center;
+    margin-left: 20px;
 }
-#texto-derecha h2, p {
-    align-items: center;
-    justify-content: center;
+
+#texto-derecha h2 {
+    font-size: 24px;
+    font-weight: bold;
 }
+
+#texto-derecha p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+
+
 

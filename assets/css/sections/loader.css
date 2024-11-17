@@ -1,26 +1,61 @@
-#loader{
+/* Loader para niños */
+#loader {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #fff; /* Color de fondo mientras carga */
+    background-color: #fdf9c4; /* Fondo amarillo suave */
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 10000; /* Asegúrate de que esté por encima de otros elementos */
+    z-index: 10000;
+    flex-direction: column;
 }
 
-#spinner{
-    border: 8px solid #f3f3f3; /* Gris claro */
-    border-top: 8px solid #3498db; /* Color de la parte giratoria */
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    animation: spin 1s linear infinite;
+/* Texto amigable */
+#loader h1 {
+    font-size: 2rem;
+    color: #ff6f61;
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px #ff9c7a;
 }
 
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+/* Contenedor de estrellas */
+#spinner {
+    display: flex;
+    gap: 10px; /* Espacio entre estrellas */
+}
+
+/* Estilo de las estrellas */
+.star {
+    width: 30px;
+    height: 30px;
+    background-color: #ffcc00; /* Amarillo inicial */
+    clip-path: polygon(
+        50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 
+        50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%
+    );
+    opacity: 0.2; /* Inicialmente tenue */
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+/* Secuencia de encendido para cada estrella */
+.star:nth-child(1) { animation-delay: 0s; }
+.star:nth-child(2) { animation-delay: 0.3s; }
+.star:nth-child(3) { animation-delay: 0.6s; }
+.star:nth-child(4) { animation-delay: 0.9s; }
+.star:nth-child(5) { animation-delay: 1.2s; }
+
+/* Animación de encendido */
+@keyframes pulse {
+    0%, 100% {
+        opacity: 0.2; /* Tenue */
+        transform: scale(1); /* Tamaño normal */
+    }
+    50% {
+        opacity: 1; /* Brillante */
+        transform: scale(1.2); /* Ligeramente más grande */
+    }
 }

@@ -65,14 +65,66 @@
 /* Estilo para el menú abierto */
 #menu-abierto {
     position: absolute;
-    width: 300px;
-    height: 350px;
+    width: 140px;
+    height: auto; /* Ajustar según el contenido */
+    top: 20px; /* Alinear verticalmente con el menú cerrado */
     background-color: bisque;
+    padding-top: 30px;
     display: none;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    opacity: 0; /* Oculto inicialmente */
+    animation: fade-in 0.3s ease forwards;
+  
+}
+#menu-abierto p {
+    margin: 0;
+    text-align: center; /* Centrar texto horizontalmente */
+    font-size: 16px;
+    padding: 10px;
+    color: #02187E;
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+    opacity: 0; /* Oculto inicialmente */
+    transform: translateY(10px); /* Posición inicial */
+    animation: slide-in 0.5s ease forwards;
+}
+#menu-cerrado.active + #menu-abierto {
+    display: flex; /* Mostrar el menú al activarse */
 }
 
+
+/* Retrasos progresivos para cada opción */
+#menu-abierto p:nth-child(1) {
+    animation-delay: 0.3s;
+}
+
+#menu-abierto p:nth-child(2) {
+    animation-delay: 0.6s;
+}
+
+#menu-abierto p:nth-child(3) {
+    animation-delay: 0.9s;
+}
+
+/* Animaciones */
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slide-in {
+    from {
+        opacity: 0;
+        transform: translateY(10px); /* Comienza desde abajo */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Llega a su posición final */
+    }
+}
 
 /*   --------------------------------------------------------------------------------------   */
 
