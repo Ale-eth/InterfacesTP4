@@ -17,6 +17,8 @@
 
 
     <title>Interfaces TP4</title>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer"></script>
+
 </head>
 
 <body>
@@ -298,13 +300,28 @@
                         un aprendizaje dinámico y emocionante. ¡Cada sesión de juego se convierte
                         en una experiencia inolvidable llena de color y diversión!</p>
                 </div>
-                <div id="img-3d">
+                <!--div id="img-3d">
                     <img src="assets/images/Section 3D/3d.png" alt="">
+                </div-->
+                <div id="img-3d">
+                    <model-viewer
+                        id="reveal"
+                        loading="eager"
+                        camera-controls
+                        touch-action="pan-y"
+                        auto-rotate
+                        poster="assets/images/Section 3D/3d.png"
+                        tone-mapping="aces"
+                        src="assets/images/Section 3D/models/one.glb"  
+                        shadow-intensity="1"
+                        alt="Un modelo 3D de ejemplo">
+                    </model-viewer>
                 </div>
             </div>
             <div id="numeros3D">
                 <img src="assets/images/Section 3D/numeros3D.png" alt="">
             </div>
+            
         </section>
 
         <section id="novedades">
