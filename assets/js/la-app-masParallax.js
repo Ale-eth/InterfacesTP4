@@ -39,3 +39,5 @@ window.addEventListener('scroll', () => {
     personajeverde.style.transform = `translateY(${moveUpDistance}px)`;
 
 });
+
+

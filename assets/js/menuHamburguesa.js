@@ -9,3 +9,5 @@ menuToggle.addEventListener('click', () => {
         menuOpen.style.display = 'block';
     }
 });
+
+
