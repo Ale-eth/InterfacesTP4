@@ -51,7 +51,8 @@
 
 /* Cuando el menú hamburguesa se convierte en cruz */
 #menu-cerrado.active .bar:nth-child(1) {
-    transform: rotate(45deg) translate(7px, 7px); /* Ajusta los valores para centrar mejor */
+    transform: rotate(45deg) translate(7px, 8px); /* Ajusta los valores para centrar mejor */
+    box-shadow: 2px 4px 0px 3px #02187E; /* cambio la sombra porque cambia la posicion*/
 }
 
 #menu-cerrado.active .bar:nth-child(2) {
@@ -59,7 +60,8 @@
 }
 
 #menu-cerrado.active .bar:nth-child(3) {
-    transform: rotate(-45deg) translate(7px, -7px); /* Ajusta los valores para centrar mejor */
+    transform: rotate(-45deg) translate(7px, -8px); /* Ajusta los valores para centrar mejor */
+    box-shadow: 0px 4px 0px 3px #02187E; /* cambio la sombra porque cambia la posicion*/
 }
 
 /* Estilo para el menú abierto */
