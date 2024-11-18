@@ -38,24 +38,12 @@
         50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%
     );
     opacity: 0.2; /* Inicialmente tenue */
-    animation: pulse 1.5s ease-in-out infinite;
+    transform: scale(1); /* Tamaño normal */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Transiciones suaves */
 }
 
-/* Secuencia de encendido para cada estrella */
-.star:nth-child(1) { animation-delay: 0s; }
-.star:nth-child(2) { animation-delay: 0.3s; }
-.star:nth-child(3) { animation-delay: 0.6s; }
-.star:nth-child(4) { animation-delay: 0.9s; }
-.star:nth-child(5) { animation-delay: 1.2s; }
-
-/* Animación de encendido */
-@keyframes pulse {
-    0%, 100% {
-        opacity: 0.2; /* Tenue */
-        transform: scale(1); /* Tamaño normal */
-    }
-    50% {
-        opacity: 1; /* Brillante */
-        transform: scale(1.2); /* Ligeramente más grande */
-    }
+/* Estrellas encendidas */
+.star.on {
+    opacity: 1; /* Brillante */
+    transform: scale(1.2); /* Ligeramente más grande */
 }
