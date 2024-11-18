@@ -6,4 +6,11 @@ menuToggle.addEventListener('click', () => {
     menuOpen.classList.toggle('active'); // Toggle la clase 'active' para mostrar u ocultar el menú
 });
 
+// cierra el menu, si me lo olvido abierto y hago scroll
+window.addEventListener('scroll', () => {
+    if (menuOpen.classList.contains('active')) {
+        menuToggle.classList.remove('active');
+        menuOpen.classList.remove('active');
+    }
+});
 
