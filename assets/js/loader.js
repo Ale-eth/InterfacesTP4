@@ -18,5 +18,5 @@ window.addEventListener("load", function () {
         clearInterval(starInterval); // Detenemos la secuencia
         const loader = document.getElementById("loader");
         loader.style.display = "none"; // Ocultar el loader
-    }, 5500);
+    }, 1);
 });

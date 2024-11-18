@@ -65,12 +65,12 @@
 /* Estilo para el menú abierto */
 #menu-abierto {
     position: absolute;
-    width: 150px;
+    width: 210px;
     height: auto; /* Ajustar según el contenido */
     top: 12px; /* Alinear verticalmente con el menú cerrado */
     left: 12px;
     background-color: bisque;
-    padding-top: 35px;
+    padding-top: 55px;
     padding-bottom: 20px;
     display: none;
     flex-direction: column;
@@ -84,15 +84,21 @@
 }
 #menu-abierto p {
     margin: 0;
-    text-align: center; /* Centrar texto horizontalmente */
-    font-size: 16px;
-    padding: 10px;
+    text-align: left; /* Centrar texto horizontalmente */
+    font-size: 18px;
+    padding: 22px;
     color: #02187E;
     font-family: 'Comic Sans MS', 'Arial', sans-serif;
     opacity: 0; /* Oculto inicialmente */
     transform: translateY(10px); /* Posición inicial */
     animation: slide-in 0.5s ease forwards;
 }
+
+#menu-abierto a {
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    color: inherit; /* Mantiene el color del texto sin alterar */
+}
+
 #menu-cerrado.active + #menu-abierto {
     display: flex; /* Mostrar el menú al activarse */
 }
@@ -110,6 +116,7 @@
 #menu-abierto p:nth-child(3) {
     animation-delay: 0.9s;
 }
+
 
 /* Animaciones */
 @keyframes fade-in {
