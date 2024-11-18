@@ -76,8 +76,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.6);
     opacity: 0; /* Oculto inicialmente */
     animation: fade-in 0.3s ease forwards;
   
