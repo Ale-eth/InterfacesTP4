@@ -75,7 +75,7 @@
 /*   --------------------------------------------------------------------------------------   */
 /* -SECTION: LA APP MAS DIVERTIDA PARTE DE ABAJO  //  CARDS- */
 #la-app-mas-divertida2{
-    height: 958px;
+    height: 890px;
     position: relative;
     z-index: 0;
 
@@ -102,8 +102,8 @@
 
 #img-cards-1{
     position: absolute;
-    width: 281px;
-    height: 255px;
+    width: 280px;
+    height: 180px;
     outline: 7.5px solid #1B5F99;
     border-radius: 41px;
     left: 84.5px;
@@ -112,8 +112,8 @@
 
 #img-cards-2{
     position: absolute;
-    width: 281px;
-    height: 255px;
+    width: 280px;
+    height: 180px;
     outline: 7.5px solid #1B5F99;
     border-radius: 41px;
     left: 399.5px;
@@ -122,8 +122,8 @@
 
 #img-cards-3{
     position: absolute;
-    width: 281px;
-    height: 255px;
+    width: 280px;
+    height: 180px;
     outline: 7.5px solid #1B5F99;
     border-radius: 41px;
     left: 714.5px;
@@ -145,7 +145,7 @@
     padding: 0;
 
     position: absolute;
-    width: 281px;
+    width: 288px;
     height: 184px;
     bottom: 260px;
     left: 84.5px;
@@ -160,7 +160,7 @@
     padding: 0;
 
     position: absolute;
-    width: 281px;
+    width: 280px;
     height: 184px;
     bottom: 260px;
     left: 399.5px;
@@ -175,7 +175,7 @@
     padding: 0;
 
     position: absolute;
-    width: 281px;
+    width: 280px;
     height: 184px;
     bottom: 260px;
     left: 714.5px;
