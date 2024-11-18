@@ -1,64 +1,64 @@
-/* Estilos generales del contenedor */
+/* Sección principal */
 #mas-amigos-mas-diversion {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    align-items: center;
+    overflow: hidden; /* Oculta el contenido fuera del viewport */
     position: relative;
-    height: 100vh; /* Esto es importante para que ocupe toda la pantalla */
-    overflow: hidden; /* Ocultar cualquier contenido fuera de la pantalla */
 }
 
-/* Contenedor principal que tiene todas las secciones */
-.carousel-container {
-    display: flex;
-    flex-direction: column; /* Las secciones se alinean verticalmente */
-}
-
-/* Cada sección individual */
+/* Cada contenedor */
 .contenedor {
-    min-height: 100vh; /* Cada contenedor ocupa la pantalla completa */
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
-    opacity: 0; /* Empieza invisible */
-    transition: opacity 5s ease-out; /* Transición suave para la visibilidad */
-    position: absolute; /* Para que todos los contenedores se apilen */
-    top: 0;
-    left: 0;
-    right: 0;
+    justify-content: center;
+    opacity: 0; /* Ocultos inicialmente */
+    transform: translateY(50px); /* Mueve hacia abajo inicialmente */
+    transition: opacity 1s ease, transform 1s ease;
+    height: 80vh; /* Cada contenedor ocupa una altura parcial */
+    width: 100%;
 }
 
-/* Mostrar un contenedor a la vez */
-.contenedor.show {
-    opacity: 1;
-    position: relative; /* Lo hace visible */
+/* Contenedor activo */
+.contenedor.active {
+    opacity: 1; /* Aparece */
+    transform: translateY(0); /* Vuelve a su posición original */
 }
 
-
-/* Estilo de la imagen */
+/* Imagen con transición combinada */
 #imagen-izq img {
-    width: 150px;
+    width: 300px;
     height: auto;
     object-fit: cover;
+    transform: scale(0.8); /* Inicia con un zoom menor */
+    opacity: 0; /* Empieza invisible */
+    transition: transform 1.2s ease, opacity 1.2s ease; /* Transiciones combinadas */
 }
 
-/* Estilo del texto */
+/* Cuando el contenedor es visible */
+.contenedor.active #imagen-izq img {
+    transform: scale(1); /* Regresa al tamaño original */
+    opacity: 1; /* Se hace visible */
+}
+
+
+/* Columna de texto */
 #texto-derecha {
     margin-left: 20px;
+    text-align: left;
+    max-width: 600px;
 }
 
-#texto-derecha h2 {
-    font-size: 24px;
-    font-weight: bold;
+#texto h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
-#texto-derecha p {
-    font-size: 16px;
-    line-height: 1.5;
+#texto p {
+    font-size: 1.2rem;
+    line-height: 1.6;
 }
-
-
 
 
 
