@@ -5,7 +5,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #fdf9c4; /* Fondo amarillo suave */
+    background: linear-gradient(to bottom, #87CEEB, #FFFFFF); /* Degradado cielo azul a blanco */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -13,37 +13,53 @@
     flex-direction: column;
 }
 
-/* Texto amigable */
+/* Texto amigable con animación */
 #loader h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: #ff6f61;
     font-family: 'Comic Sans MS', 'Arial', sans-serif;
     margin-bottom: 20px;
     text-shadow: 2px 2px #ff9c7a;
+    animation: bounce 1.5s infinite; /* Animación de rebote */
 }
 
-/* Contenedor de estrellas */
+/* Contenedor de bloques */
 #spinner {
     display: flex;
-    gap: 10px; /* Espacio entre estrellas */
+    gap: 15px; /* Espacio entre bloques */
 }
 
-/* Estilo de las estrellas */
-.star {
-    width: 30px;
-    height: 30px;
-    background-color: #ffcc00; /* Amarillo inicial */
-    clip-path: polygon(
-        50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 
-        50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%
-    );
+/* Estilo general de los bloques */
+.block {
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     opacity: 0.2; /* Inicialmente tenue */
     transform: scale(1); /* Tamaño normal */
     transition: opacity 0.5s ease, transform 0.5s ease; /* Transiciones suaves */
 }
 
-/* Estrellas encendidas */
-.star.on {
+/* Bloques encendidos */
+.block.on {
     opacity: 1; /* Brillante */
     transform: scale(1.2); /* Ligeramente más grande */
 }
+
+/* Animación de rebote para el título */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Rebote hacia arriba */
+    }
+}
+
