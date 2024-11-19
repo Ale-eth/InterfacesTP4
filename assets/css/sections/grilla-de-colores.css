@@ -17,7 +17,7 @@
 }
 
 .colores {
-    background-image: url('/assets/images/Seccion grilla-de-colores/numeros3D.png');
+    background-image: url('../../images/Seccion grilla-de-colores/numeros3D.png');
     
     background-size: 498% 208%; /* Tamaño adecuado para cubrir todo */
     background-repeat: no-repeat;
