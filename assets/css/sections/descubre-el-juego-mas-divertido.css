@@ -2,12 +2,22 @@
 
 #descubre-el-juego-mas-divertido{
   
-    padding-top: 70px;
+    padding-top: 100px;
     height: 990px;
     position: relative;
     background-color: #5829BF;
-    
+}
 
+/*se agrega elemento para efecto concavo superior*/
+#descubre-el-juego-mas-divertido::before{
+  
+  content: '';
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 50px;
+  background: white;
+  border-radius: 0% 0% 100% 100%;
 }
 
 #text-container3{
