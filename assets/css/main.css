@@ -5,7 +5,7 @@ body{
 
 #container-main{
     width: 1080px;
-    height: 16000px;
+    height: auto;
     background-color: #FFFFFF;
     overflow: hidden;
 
