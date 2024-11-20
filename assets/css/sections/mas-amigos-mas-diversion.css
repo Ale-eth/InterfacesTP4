@@ -50,15 +50,25 @@
     max-width: 600px;
 }
 
-#texto h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+#texto-derecha h2 {
+    font-family: Lato;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 37.8px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
 }
 
-#texto p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-}
+#texto-derecha p {
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 18.9px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
 
+}
 
 
