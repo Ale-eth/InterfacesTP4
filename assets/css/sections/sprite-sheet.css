@@ -48,7 +48,7 @@
 .number-sprite1 {
     width: 85px; /* Ancho de un fotograma */
     height: 85px; /* Alto de un fotograma */
-    background-image: url('/assets/images/Seccion sprite-sheet/sheet1.webp');
+    background-image: url('../../images/Seccion sprite-sheet/sheet1.webp');
     background-repeat: no-repeat;
     animation: number-sequence 3s steps(12) infinite;
 }
@@ -56,7 +56,7 @@
 .number-sprite2 {
     width: 85px; /* Ancho de un fotograma */
     height: 85px; /* Alto de un fotograma */
-    background-image: url('/assets/images/Seccion sprite-sheet/sheet1.webp');
+    background-image: url('../../images/Seccion sprite-sheet/sheet1.webp');
     background-repeat: no-repeat;
     animation: number-sequence 3s steps(12) infinite;
 }
@@ -64,7 +64,7 @@
 .number-sprite3 {
     width: 85px; /* Ancho de un fotograma */
     height: 85px; /* Alto de un fotograma */
-    background-image: url('/assets/images/Seccion sprite-sheet/sheet1.webp');
+    background-image: url('../../images/Seccion sprite-sheet/sheet1.webp');
     background-repeat: no-repeat;
     animation: number-sequence 3s steps(12) infinite;
 }
