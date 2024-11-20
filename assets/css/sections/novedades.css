@@ -30,9 +30,82 @@
     z-index: 1; /* Debajo de los números */
 }
 #cesped img {
-    width: 100%; /* Mantén el ancho completo del contenedor */
-    height: 300px; /* Cambia este valor según necesites */
-    object-fit: cover; /* Asegura que la imagen mantenga un buen ajuste */
-    display: block; /* Elimina el espacio extra alrededor de la imagen */
+    width: 100%;
+    /* Mantén el ancho completo del contenedor */
+    height: 300px;
+    /* Cambia este valor según necesites */
+    object-fit: cover;
+    /* Asegura que la imagen mantenga un buen ajuste */
+    display: block;
+    /* Elimina el espacio extra alrededor de la imagen */
+}
+
+#textoPrincipal {
+    font-family: Lato;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 56.7px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    width: 816px;
+    height: 171px;
+    left: 100px;
+    gap: 0px;
+    opacity: 0px;
+
+}
+
+/* Contenedor */
+.input-button-container {
+    display: flex;
+    /* Alinea los elementos horizontalmente */
+    align-items: center;
+    width: 100%;
+    /* Ajusta el tamaño del contenedor si es necesario */
+}
+
+/* Estilo del input */
+.input-field {
+    width: 780px;
+    height: 100px;
+    left: 100px;
+    gap: 0px;
+    border-radius: 50px 0px 0px 50px;
+    opacity: 0px;
+    border-width: 9px, 0px, 9px, 9px;
+    box-shadow: 4px 5px 0px 0px #02187E;
+    border-color: #FFFFFF;
+    background: #ECECEC;
+    border: 9px solid #FFFFFF;
+
+}
+
+
+/* Estilo del botón */
+.btn-novedades {
+    width: 218px;
+    height: 100px;
+    left: 880px;
+    gap: 0px;
+    border-radius: 0px 50px 50px 0px;
+ 
+    opacity: 0px;
+    padding: 10px 20px;
+    background: #83C252;
+    border: 9px solid #FFFFFF;
+    box-shadow: 4px 5px 0px 0px #02187E;
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 18.9px;
+    letter-spacing: 0.11em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FFFFFF;
+
+
+
 }
 
