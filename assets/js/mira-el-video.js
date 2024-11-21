@@ -1,9 +1,14 @@
-window.addEventListener('scroll', function() {
-    let offset = window.scrollY;
+window.addEventListener('scroll', function () {
+    const video = document.querySelector('.parallax-video');
+    const image = document.querySelector('.parallax-img');
+    const container = document.getElementById('mira-el-video');
+    const rect = container.getBoundingClientRect();
 
-    // Actualiza la variable para el video
-    document.documentElement.style.setProperty('--video-offset', offset * 0.5 + 'px');
-
-    // Actualiza la variable para la imagen
-    document.documentElement.style.setProperty('--img-offset', offset * 0.3 + 'px');
+    // Detecta si el contenedor está visible en el viewport
+    if (rect.top < window.innerHeight && rect.bottom > 0) {
+        // Agrega las clases para iniciar las animaciones
+        video.classList.add('visible');
+        image.classList.add('visible');
+    }
 });
+

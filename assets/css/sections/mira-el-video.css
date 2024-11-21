@@ -68,12 +68,29 @@
     overflow: visible; /* Asegura que no se corte la imagen */
 }
 
-/* Parallax effect */
+
+
+/* Ocultar inicialmente */
+.hidden {
+    opacity: 0;
+    transform: translateX(0); /* Para aplicar movimiento */
+    transition: all 5s ease-out;
+}
+
+/* Video entra desde la derecha */
 .parallax-video {
-    transform: translateY(var(--video-offset, 0px));
+    transform: translateX(100%); /* Fuera de la pantalla por la derecha */
+    z-index: 2; /* Asegura que el video esté detrás de la imagen al inicio */
 }
 
+/* Imagen entra desde la izquierda */
 .parallax-img {
-    transform: translateY(var(--img-offset, 0px));
+    transform: translateX(-100%); /* Fuera de la pantalla por la izquierda */
+    z-index: 3; /* Asegura que la imagen esté encima del video */
 }
 
+/* Estado visible con superposición */
+.visible {
+    opacity: 1; /* Hacer visible */
+    transform: translateX(0); /* Colocar en su posición final */
+}
