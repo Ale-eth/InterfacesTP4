@@ -3,6 +3,7 @@
     height: 1500px; /* Ajusta según necesites */
     position: relative; /* Contenedor principal relativo */
     overflow: hidden; /* Oculta cualquier elemento que sobresalga */
+    z-index: 0;
 }
 
 #contenedorNumeros {
@@ -19,12 +20,14 @@
 #contenedorNumeros div img {
     width: 400px; /* Cambia este valor para aumentar el tamaño */
     height: auto; /* Mantén las proporciones originales */
+    z-index: 2;
 }
 
 #dos img {
     position: absolute;
     top: 900px;
     left: -50px;
+    z-index: 3;
 
 }
 
@@ -32,10 +35,12 @@
     position: absolute;
     top: 900px;
     left: 300px;
+    z-index: 3;
 }
 
 #siete img {
     margin-top: 500px;
+    z-index: 3;
 
 }
 
@@ -73,7 +78,13 @@
     opacity: 0px;
     margin-left: 60px;
     margin-bottom: 35px;
+    z-index: 2;
 
+}
+
+#textoSuscripcion{
+    position: absolute;
+    z-index: 2;
 }
 
 /* Contenedor */
@@ -131,6 +142,9 @@
 
 #footer-img-teen{
     margin-left: 60px;
+    position: absolute;
+    z-index: 2;
+    top:500px;
 }
 
 
@@ -141,6 +155,7 @@
     bottom: 1000px;
     height: 100px;
     width: 230px;
+    z-index: 1;
 }
 
 #fn2{
@@ -148,6 +163,7 @@
     bottom: 830px;
     height: 350px;
     height: 150px;
+    z-index: 1;
 }
 
 #fn3{
@@ -155,4 +171,5 @@
     bottom: 700px;
     height: 350px;
     height: 150px;
+    z-index: 1;
 }
