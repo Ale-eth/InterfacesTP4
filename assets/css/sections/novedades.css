@@ -102,6 +102,7 @@
 
 /* Estilo del input */
 .input-field {
+    padding-left: 20px;
     width: 658px;
     height: 65px;
     left: 100px;
