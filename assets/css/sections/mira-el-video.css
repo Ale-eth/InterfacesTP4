@@ -4,6 +4,7 @@
     z-index: 0;
     background-color: #EFB71E;
     overflow: hidden;
+    clip-path: path("M-83 56.0049C135 -108.5 905.5 152.502 1346 56.0049V1444C776.18 1413.21 444.167 1363.12 -83 1444V56.0049Z");
 }
 
 #titulo-video {

@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
 #footer{
     width: 1280px; /* Cambia este valor para aumentar el tamaño */
     height: 900px; /* Mantén las proporciones originales */
@@ -43,6 +46,15 @@
     width: 60%;
     margin: 20px 0; /* Espaciado superior e inferior */
     padding: 10px 20px; /* Espaciado interno */
+}
+
+#textoSuscripcion p{
+    width: 578px;
+    font-size: 20px;
+    font-family: "Lato", sans-serif;
+    font-weight: 550;
+    font-style: SemiBold;
+    margin-left: 84px;
 }
 
 

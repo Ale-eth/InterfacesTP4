@@ -76,9 +76,6 @@
     height: 890px;
     position: relative;
     z-index: 0;
-
-    
-    
 }
 
 #img-personajeverde{
@@ -132,6 +129,7 @@
 
 /*   --------------------------------------------------------------------------------------   */
 /* -TEXTOS CARDS- */
+
 #p-card1{
     font-size: 16.85px;
     color: #1B428F;

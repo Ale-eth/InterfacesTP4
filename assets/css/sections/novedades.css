@@ -1,6 +1,6 @@
 #novedades {
     background: linear-gradient(180deg, #E0D299 0%, #ADF8FD 47.09%, #EDFDFF 88.29%, #FFFFFF 107.02%);
-    height: 2000px; /* Ajusta según necesites */
+    height: 1500px; /* Ajusta según necesites */
     position: relative; /* Contenedor principal relativo */
     overflow: hidden; /* Oculta cualquier elemento que sobresalga */
 }
@@ -17,8 +17,26 @@
 }
 
 #contenedorNumeros div img {
-    width: 250px; /* Cambia este valor para aumentar el tamaño */
+    width: 400px; /* Cambia este valor para aumentar el tamaño */
     height: auto; /* Mantén las proporciones originales */
+}
+
+#dos img {
+    position: absolute;
+    top: 900px;
+    left: -50px;
+
+}
+
+#tres img {
+    position: absolute;
+    top: 900px;
+    left: 300px;
+}
+
+#siete img {
+    margin-top: 500px;
+
 }
 
 
@@ -42,17 +60,19 @@
 
 #textoPrincipal {
     font-family: Lato;
-    font-size: 60px;
-    font-weight: 600;
+    font-size: 50px;
+    font-weight: 420;
     line-height: 56.7px;
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-    width: 816px;
+    width: 675px;
     height: 171px;
     left: 100px;
     gap: 0px;
     opacity: 0px;
+    margin-left: 60px;
+    margin-bottom: 35px;
 
 }
 
@@ -67,8 +87,8 @@
 
 /* Estilo del input */
 .input-field {
-    width: 780px;
-    height: 100px;
+    width: 658px;
+    height: 65px;
     left: 100px;
     gap: 0px;
     border-radius: 50px 0px 0px 50px;
@@ -78,6 +98,7 @@
     border-color: #FFFFFF;
     background: #ECECEC;
     border: 9px solid #FFFFFF;
+    margin-left: 60px;
 
 }
 
@@ -85,7 +106,7 @@
 /* Estilo del botón */
 .btn-novedades {
     width: 218px;
-    height: 100px;
+    height: 83px;
     left: 880px;
     gap: 0px;
     border-radius: 0px 50px 50px 0px;
@@ -105,7 +126,33 @@
     text-decoration-skip-ink: none;
     color: #FFFFFF;
 
-
-
 }
 
+
+#footer-img-teen{
+    margin-left: 60px;
+}
+
+
+
+
+#fn1{
+    position: absolute;
+    bottom: 1000px;
+    height: 100px;
+    width: 230px;
+}
+
+#fn2{
+    position: absolute;
+    bottom: 830px;
+    height: 350px;
+    height: 150px;
+}
+
+#fn3{
+    position: absolute;
+    bottom: 700px;
+    height: 350px;
+    height: 150px;
+}

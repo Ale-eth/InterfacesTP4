@@ -13,4 +13,4 @@ function cambiarImg() {
     img.src = imgs[current];
 }
 
-setInterval(cambiarImg, 1000);
+setInterval(cambiarImg, 3000);
