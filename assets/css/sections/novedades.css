@@ -114,6 +114,7 @@
     background: #ECECEC;
     border: 9px solid #FFFFFF;
     margin-left: 60px;
+    z-index: 3; /* Asegura que el input esté encima de las imágenes */
 
 }
 

@@ -26,7 +26,9 @@
 /* Contenedor de bloques */
 #spinner {
     display: flex;
+    align-items: center;
     gap: 15px; /* Espacio entre bloques */
+    position: relative; /* Para posicionar las imágenes fuera del contenedor */
 }
 
 /* Estilo general de los bloques */
@@ -63,3 +65,30 @@
     }
 }
 
+/* Estilo para las imágenes fuera del contador (a la izquierda y derecha) */
+.image {
+    position: absolute; /* Posicionadas fuera del contenedor */
+    top: 50%;
+    transform: translateY(-50%);
+    animation: bounce 1.5s infinite; /* Animación de rebote */
+}
+
+/* Imagen izquierda */
+.image.left {
+    left: 50px; /* Coloca la imagen fuera del lado izquierdo */
+    z-index: 1; /* Asegura que la imagen quede por encima de otros elementos */
+    top: 200px;
+}
+
+/* Imagen derecha */
+.image.right {
+    right: 50px; /* Coloca la imagen fuera del lado derecho */
+    z-index: 1; /* Asegura que la imagen quede por encima de otros elementos */
+    top: 200px;
+}
+
+/* Ajuste de las imágenes */
+.image img {
+    width: 200px; /* Haciendo la imagen más grande */
+    height: auto;
+}
