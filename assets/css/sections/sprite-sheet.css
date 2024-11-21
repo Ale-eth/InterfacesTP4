@@ -45,35 +45,8 @@
     gap: 30px; /* Espacio entre los sprites */
 }
 
-.number-sprite1 {
-    width: 85px; /* Ancho de un fotograma */
-    height: 85px; /* Alto de un fotograma */
-    background-image: url('../../images/Seccion sprite-sheet/sheet1.webp');
-    background-repeat: no-repeat;
-    animation: number-sequence 3s steps(12) infinite;
+#sprite-sheet{
+    
 }
 
-.number-sprite2 {
-    width: 85px; /* Ancho de un fotograma */
-    height: 85px; /* Alto de un fotograma */
-    background-image: url('../../images/Seccion sprite-sheet/sheet1.webp');
-    background-repeat: no-repeat;
-    animation: number-sequence 3s steps(12) infinite;
-}
 
-.number-sprite3 {
-    width: 85px; /* Ancho de un fotograma */
-    height: 85px; /* Alto de un fotograma */
-    background-image: url('../../images/Seccion sprite-sheet/sheet1.webp');
-    background-repeat: no-repeat;
-    animation: number-sequence 3s steps(12) infinite;
-}
-
-@keyframes number-sequence {
-    from {
-        background-position: 0 0;
-    }
-    to {
-        background-position: -1020px 0; /* Ancho total: 85px * 12 fotogramas */
-    }
-}
