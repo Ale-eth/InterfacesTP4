@@ -21,28 +21,32 @@
     width: 400px; /* Cambia este valor para aumentar el tamaño */
     height: auto; /* Mantén las proporciones originales */
     z-index: 2;
+    position: relative;
 }
 
 #dos img {
     position: absolute;
     top: 900px;
-    left: -50px;
     z-index: 3;
+    left:100px;
 
 }
 
 #tres img {
     position: absolute;
     top: 900px;
-    left: 300px;
+
     z-index: 3;
 }
 
 #siete img {
     margin-top: 500px;
+    top: 120px;
     z-index: 3;
-
 }
+
+
+
 
 
 #cesped {
