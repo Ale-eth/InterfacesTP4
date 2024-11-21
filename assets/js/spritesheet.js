@@ -1,19 +1,22 @@
-const spriteSheet = document.getElementById('sprite-sheet');
+
+let spriteSheet = document.getElementById('sprite-sheett'); // Asegúrate de tener el elemento correcto
 
 function animateSprite() {
+    let sprites = [
+        'assets/images/Seccion sprite-sheet/sps/uno.png',
+        'assets/images/Seccion sprite-sheet/sps/dos.png',
+        'assets/images/Seccion sprite-sheet/sps/tres.png',
+        'assets/images/Seccion sprite-sheet/sps/cuatro.png'
+    ];
 
-    spriteSheet.src = 'assets/images/Seccion sprite-sheet/sps/2.png';
-    setTimeout(animateSprite, 100);
-    spriteSheet.src = 'assets/images/Seccion sprite-sheet/sps/3.png';
-    setTimeout(animateSprite, 100);
-    spriteSheet.src = 'assets/images/Seccion sprite-sheet/sps/4.png';
-    setTimeout(animateSprite, 100);
-    spriteSheet.src = 'assets/images/Seccion sprite-sheet/sps/1.png';
-    setTimeout(animateSprite, 100);
-
-    console.log("adentroooo");
-    // Llama de nuevo para el siguiente fotograma
-    setTimeout(animateSprite, 5000); // Cambia cada 100 ms (ajusta según velocidad deseada)
+    let index = 0;
+    
+    // Cambia la imagen cada 300ms
+    setInterval(function() {
+        console.log("cambio");
+        spriteSheet.src = sprites[index];
+        index = (index + 1) % sprites.length; // Esto reinicia el índice al llegar al final del array
+    }, 100); // 300ms entre cada cambio de imagen
 }
 
 // Inicia la animación
